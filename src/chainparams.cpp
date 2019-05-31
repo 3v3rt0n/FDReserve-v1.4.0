@@ -54,11 +54,12 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000049e23eadc79a32fe15924c0c7d47d5fbe117eb950409fd5b8e11855e3b"));
+    (       0, uint256("0x00000049e23eadc79a32fe15924c0c7d47d5fbe117eb950409fd5b8e11855e3b"))
+    (  345000, uint256("0x4f54438aa4bb034f372dc1d2e497f4aff0cf634bc36078016970faa078986c58"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1537748176, // * UNIX timestamp of last checkpoint block
-    0,    // * total number of transactions between genesis and last checkpoint
+    1558964724, // * UNIX timestamp of last checkpoint block
+    712818,     // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
 };
@@ -145,10 +146,10 @@ public:
         assert(hashGenesisBlock == uint256("0x00000049e23eadc79a32fe15924c0c7d47d5fbe117eb950409fd5b8e11855e3b"));
         assert(genesis.hashMerkleRoot == uint256("0x9e82d363a59c51f3e30e29fb464659c5f8a01f059f2c8be0bf8d8d19c8644129"));
 
-        vSeeds.push_back(CDNSSeedData("199.247.9.66", "199.247.9.66"));
-        vSeeds.push_back(CDNSSeedData("217.69.0.102", "217.69.0.102"));
-        vSeeds.push_back(CDNSSeedData("140.82.53.140", "140.82.53.140"));
-	vSeeds.push_back(CDNSSeedData("79.137.80.33", "79.137.80.33"));
+        vSeeds.push_back(CDNSSeedData("167.86.79.180", "167.86.79.180"));
+        vSeeds.push_back(CDNSSeedData("167.86.75.126", "167.86.75.126"));
+        vSeeds.push_back(CDNSSeedData("173.212.206.227", "173.212.206.227"));
+	    vSeeds.push_back(CDNSSeedData("5.189.139.75", "5.189.139.75"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 35);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 90);
@@ -170,7 +171,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04D73E5D3F9B820F165D4561721E723813F2A4FF07E03E67E920E166833B6DE2EFC5031062B4EEBB17D0E3162FADCA66C620FDFE002920F758580D3C3262123220";
+        strSporkKey = "04480c4019a60d1e1dceabaea935517904750a01ef348ea6ed926835055a03da4426277cded4ac4f3941c5a7fd123cdd2c9f6573c71ce7d8b142d171f6fef40afa";
         strObfuscationPoolDummyAddress = "FU25d2PLxsbUbsNoHKSiqhDeTk3Rgqirpf";
         nStartMasternodePayments = 1537748176;
 
