@@ -13,7 +13,7 @@
  * for both fdreserved and fdreserve-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("FDReserve Core");
+const std::string CLIENT_NAME("FD Reserve Core");
 
 /**
  * Client version number
