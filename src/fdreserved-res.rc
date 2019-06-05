@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "FDReserve"
-            VALUE "FileDescription",    "fdreserved (OSS daemon/client for FDReserve)"
+            VALUE "CompanyName",        "FD Reserve"
+            VALUE "FileDescription",    "fdreserved (OSS daemon/client for FD Reserve)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "fdreserved"
             VALUE "LegalCopyright",     COPYRIGHT_STR
